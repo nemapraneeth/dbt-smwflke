@@ -1,0 +1,20 @@
+version: 2
+
+sources:
+  - name: raw_sales
+    schema: rawdata
+    database: dbt_db
+    tables:
+    - name: sales
+
+  - name: raw_customers
+    schema: rawdata
+    database: dbt_db
+    tables:
+    - name: customers
+  
+  - name: dim_sales
+    schema: landing
+    database: dbt_db
+    tables: 
+    - name: stg_sales
