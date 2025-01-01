@@ -1,0 +1,15 @@
+version: 2
+
+sources:
+
+  - name: stg_sales
+    schema: landing
+    database: dbt_db
+    tables: 
+    - name: stg_sales
+
+  - name: stg_customers
+    schema: landing
+    database: dbt_db
+    tables: 
+    - name: stg_customers
